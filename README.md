@@ -25,18 +25,14 @@ Follow these steps to run the project locally:
    ```bash
    git clone [https://github.com/b-ezawit/todo-web-app.git](https://github.com/b-ezawit/todo-web-app.git)
    cd todo-web-app
-Install dependencies: (This ensures any required packages are installed)
-
-Bash
-
+2. **Install dependencies:**
+```bash
 npm install
-Start the Backend Server: This command uses npx to run the server without needing a global installation.
-
-Bash
-
+```
+3.**Start the Backend Server: This command uses npx to run the server without needing a global installation.**
+```bash
 npx json-server --watch db.json --port 3000
-Run the Frontend:
-
-Open index.html in your preferred browser.
-
-Or, if you are using VS Code, right-click index.html and select "Open with Live Server".
+```
+4.**Run the Frontend:**
+-Open index.html in your preferred browser.
+-Or, if you are using VS Code, right-click index.html and select "Open with Live Server".
