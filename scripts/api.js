@@ -1,6 +1,6 @@
 const url = "http://localhost:3000/todos";
 
-// GET
+//GET
 async function getTasks(path = "") { // Default path to empty string
     try {
         // Only add slash if path exists
