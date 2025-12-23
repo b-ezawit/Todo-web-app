@@ -3,7 +3,7 @@ const doneList = document.getElementById("done-list");
 const inProgressCount = document.getElementById("inprogressCount");
 const doneCount = document.getElementById("doneCount");
 
-//HELPER: Create HTML (With type="button" everywhere)
+//Create HTML
 function createCardHTML(task) {
     const div = document.createElement("div");
     div.classList.add("task-card");
@@ -46,7 +46,7 @@ function updateCounters() {
     doneCount.textContent = `Done: ${doneList.children.length}`;
 }
 
-// 1. Initial Load 
+// Initial Load 
 function initialRender(tasks) {
     todoList.innerHTML = "";
     doneList.innerHTML = "";
@@ -60,27 +60,27 @@ function initialRender(tasks) {
     updateCounters();
 }
 
-// 2. Append
+// Append
 function appendSingleTask(task) {
     const card = createCardHTML(task);
     todoList.appendChild(card);
     updateCounters();
 }
 
-// 3. Move
+//Move
 function moveTaskCard(card, newStatus) {
     const targetList = newStatus === "Done" ? doneList : todoList;
     targetList.appendChild(card); 
     updateCounters();
 }
 
-// 4. Remove
+//Remove
 function removeTaskCard(card) {
     card.remove();
     updateCounters();
 }
 
-// 5. Update Text
+// Update Text
 function updateCardText(card, data) {
     card.querySelector(".title-display").textContent = data.title;
     card.querySelector(".date-display").textContent = data.duedate;
@@ -92,7 +92,7 @@ function updateCardText(card, data) {
     card.querySelector(".edit-desc").value = data.description;
 }
 
-// 6. Clear All 
+// Clear All 
 function clearAllTasksVisually() {
     while (todoList.firstChild) todoList.removeChild(todoList.firstChild);
     while (doneList.firstChild) doneList.removeChild(doneList.firstChild);
