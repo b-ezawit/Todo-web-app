@@ -15,7 +15,6 @@ body {
     align-items: center;
 }
 
-/* Reusable Button */
 .btn {
     border: none;
     padding: 10px 20px;
@@ -127,4 +126,5 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
