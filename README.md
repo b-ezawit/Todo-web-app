@@ -1,28 +1,42 @@
-# To‑Do App (JSON Server)
+# Todo Web App
 
-A modern To‑Do application connected to a real backend using JSON Server.  
-Users can add, edit, complete, and delete tasks with live API updates.
+A simple and efficient Todo List application that allows users to manage their daily tasks. This project uses a mock backend to persist data.
+
+## 🎥 Demo
+[**Watch the Demo Video**](https://www.awesomescreenshot.com/video/47758653?key=8274178ea79ce4cceb422fa6d9a7dbef)
 
 ## Features
-- Add tasks (title, description, category, due date)
-- Display tasks in a styled layout
-- Mark tasks as completed or in‑progress
-- Edit existing tasks
-- Delete tasks
-- **Light & Dark theme toggle**
-- Shows count of **Completed** and **In‑Progress** tasks
+- Add new tasks
+- View all tasks
+- Delete completed tasks
+- Persistent data using JSON Server
 
-## JSON Server API
-- GET /todos — load tasks
-- POST /todos — create task
-- PATCH /todos/:id — update task
-- DELETE /todos/:id — delete task
+## Tech Stack
+- HTML5
+- CSS3
+- JavaScript
+- JSON Server (Mock Backend)
 
-## Setup
-```bash
-npm install -g json-server
-json-server --watch db.json --port 3000
-```
+## Setup & Installation
 
-Open `index.html` in your browser to start the app.
-```
+Follow these steps to run the project locally:
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/b-ezawit/todo-web-app.git](https://github.com/b-ezawit/todo-web-app.git)
+   cd todo-web-app
+Install dependencies: (This ensures any required packages are installed)
+
+Bash
+
+npm install
+Start the Backend Server: This command uses npx to run the server without needing a global installation.
+
+Bash
+
+npx json-server --watch db.json --port 3000
+Run the Frontend:
+
+Open index.html in your preferred browser.
+
+Or, if you are using VS Code, right-click index.html and select "Open with Live Server".
