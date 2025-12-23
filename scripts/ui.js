@@ -46,7 +46,7 @@ function updateCounters() {
     doneCount.textContent = `Done: ${doneList.children.length}`;
 }
 
-// Initial Load 
+// Initial Load
 function initialRender(tasks) {
     todoList.innerHTML = "";
     doneList.innerHTML = "";
