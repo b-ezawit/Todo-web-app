@@ -27,9 +27,9 @@ async function createTask(taskData) {
     } catch (error) {
         console.log(error);
     }
-}
+} 
 
-// DELETE
+//DELETE
 async function deleteTask(id) {
     try {
         const response = await fetch(`${url}/${id}`, { method: 'DELETE' });
