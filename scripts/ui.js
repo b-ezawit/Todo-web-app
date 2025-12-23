@@ -22,7 +22,7 @@ function createCardHTML(task) {
         
         <div class="view-details" style="display: none;">
             <p><strong>Due:</strong> <span class="date-display">${task.duedate}</span></p>
-            <p><strong>Desc:</strong> <span class="desc-display">${task.description}</span></p>
+            <p><strong>Description:</strong> <span class="desc-display">${task.description}</span></p>
             <button type="button" class="hide-view-btn btn">Close</button>
         </div>
 
@@ -30,7 +30,7 @@ function createCardHTML(task) {
             <ul class="edit-task-detail">
                 <li>Title: <input type="text" class="edit-title" value="${task.title}"></li>
                 <li>Due: <input type="date" class="edit-date" value="${task.duedate}"></li>
-                <li>Desc: <textarea class="edit-desc">${task.description}</textarea></li>
+                <li>Descritpion: <textarea class="edit-desc">${task.description}</textarea></li>
             </ul>
             <div style="margin-top:10px;">
                 <button type="button" class="save-btn btn btn-gradient">Save</button>
@@ -46,9 +46,7 @@ function updateCounters() {
     doneCount.textContent = `Done: ${doneList.children.length}`;
 }
 
-// CORE FUNCTIONS (The Surgical Approach)
-
-// 1. Initial Load (Runs ONLY ONCE)
+// 1. Initial Load 
 function initialRender(tasks) {
     todoList.innerHTML = "";
     doneList.innerHTML = "";
@@ -62,39 +60,39 @@ function initialRender(tasks) {
     updateCounters();
 }
 
-// 2. Append (Adds to bottom, no innerHTML wipe)
+// 2. Append
 function appendSingleTask(task) {
     const card = createCardHTML(task);
     todoList.appendChild(card);
     updateCounters();
 }
 
-// 3. Move (Physically moves element, no blink)
+// 3. Move
 function moveTaskCard(card, newStatus) {
     const targetList = newStatus === "Done" ? doneList : todoList;
     targetList.appendChild(card); 
     updateCounters();
 }
 
-// 4. Remove (Removes element, no blink)
+// 4. Remove
 function removeTaskCard(card) {
     card.remove();
     updateCounters();
 }
 
-// 5. Update Text (Updates specific words, no card recreation)
+// 5. Update Text
 function updateCardText(card, data) {
     card.querySelector(".title-display").textContent = data.title;
     card.querySelector(".date-display").textContent = data.duedate;
     card.querySelector(".desc-display").textContent = data.description;
     
-    // Update inputs too
+    // Update inputs
     card.querySelector(".edit-title").value = data.title;
     card.querySelector(".edit-date").value = data.duedate;
     card.querySelector(".edit-desc").value = data.description;
 }
 
-// 6. Clear All (Loop remove)
+// 6. Clear All 
 function clearAllTasksVisually() {
     while (todoList.firstChild) todoList.removeChild(todoList.firstChild);
     while (doneList.firstChild) doneList.removeChild(doneList.firstChild);
@@ -102,7 +100,6 @@ function clearAllTasksVisually() {
 }
 
 // VIEW TOGGLES
-
 function showEditView(card) {
     card.querySelector(".view-details").style.display = "none";
     card.querySelector(".card-header").style.display = "none";
@@ -121,7 +118,6 @@ function showNormalView(card) {
 }
 
 //FORM UTILS
-
 function openInputForm(defaultValue = "") {
     if (document.querySelector(".insertForm")) return; 
 
