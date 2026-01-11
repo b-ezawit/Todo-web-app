@@ -3,9 +3,6 @@
 A simple and efficient Todo List application that allows users to manage their daily tasks. This project uses a mock backend to persist data.
 
 
-## 🎥 Demo
-[**Watch the Demo Video**](https://www.awesomescreenshot.com/video/47758653?key=8274178ea79ce4cceb422fa6d9a7dbef)
-
 ## Features
 - Add new tasks
 - View all tasks
