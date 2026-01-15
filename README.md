@@ -1,40 +1,40 @@
-# Todo Web App
 
-A simple and efficient Todo List application that allows users to manage their daily tasks. This project uses a mock backend to persist data.
+# OIBSIP - Todo List Web Application
 
+This repository contains the **Todo List Web App** developed as part of the **AICTE Oasis Infobyte Internship (December 2025, P1 Batch)**.  
+The project focuses on dynamic user interaction and task management using JavaScript.
 
-## Features
-- Add new tasks
-- View all tasks
-- Delete completed tasks
-- Persistent data using JSON Server
+## Project Overview
+**Todo List Web Application**
 
-## Tech Stack
-- HTML5
-- CSS3
-- JavaScript
-- JSON Server (Mock Backend)
+- Built using **HTML, CSS, and JavaScript**
+- Allows users to:
+  - Add new tasks
+  - Delete tasks
+  - Mark tasks as completed
+- Demonstrates real-time DOM manipulation
+- Clean, simple, and responsive UI
 
-## Setup & Installation
+## Internship Details
+- **Internship Name:** AICTE Oasis Infobyte Internship
+- **Batch:** December 2025 (P1)
+- **Start Date:** 5th December 2025
+- **Submission Deadline:** 15th January 2025
+- **Task Category:** Web Development
 
-Follow these steps to run the project locally:
+## Key Learnings
+- JavaScript DOM manipulation
+- Event listeners and user input handling
+- Basic CRUD functionality
+- UI/UX design principles for task-based apps
 
+## Guidelines Followed
+- Used a GitHub repository named **OIBSIP**
+- Followed internship rules and submission standards
+- Ensured originality and clean code structure
+- Proper project documentation for review
 
-1. **Clone the repository:**
+## How to Run the Project
+1. Clone the repository:
    ```bash
-   git clone [https://github.com/b-ezawit/todo-web-app.git](https://github.com/b-ezawit/todo-web-app.git)
-   cd todo-web-app
-   
-2.  **Install dependencies:**
-```bash
-npm install
-```
-
-3. **Start the Backend Server: This command uses npx to run the server without needing a global installation.**
-```bash
-npx json-server --watch db.json --port 3000
-```
-
-4. **Run the Frontend:**
- Open index.html in your preferred browser.
-  Or, if you are using VS Code, right-click index.html and select "Open with Live Server".
+   git clone https://github.com/b-ezawit/OIBSIP.git
